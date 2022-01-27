@@ -1,0 +1,54 @@
+- Compile command.
+g++ file.cpp -Wall -O2
+
+- Include all the libraries of c++.
+#include <bits/stdc++.h>	
+
+- loop of n iterations:
+while(n--) {}
+
+
+- Não devemos fazer comparações de doubles igual se faz com inteiros por que o valor double pode não ser preciso.
+Por exemplo, se você quer saber se um double é maior que zero, você pode fazer:
+
+#define EPS 1e-9
+
+agora sim voce faz if ( x > EPS) 
+
+na hora de comparar dois doubles sao iguais:  fabs(a - b) < EPS
+
+- index = (index + 1) % n; // index++; if (index >= n) index = 0;
+
+- index = (index + n - 1) % n; // index--; if (index < 0) index = n - 1;s
+
+- comparar dois arquivos ( seu output e o output dado nos exemplos do problema ) podem ser comparadas usando 
+ "fc" para windows e "diff" para linux. 
+
+- Printar % no printf: usar %%.
+printf("92 %%");
+
+- divisao de dois inteiros vai dar um resultado inteiro, se voce quiser que o resultado seja double, usar (double) antes de alguma variavel.
+ou pode usar um numero com um ponto do lado: 100 / 3 = int , 100. / 3 é double
+
+- Se existe vários IF verificando a mesma variavel, por exemplo:
+if( char == 'A')
+if( char == 'B')
+if( char == 'C')
+
+É melhor usar o comando switch 
+
+switch ( char) {
+case 'A':
+
+case 'B'
+
+etc.
+
+- Se eu tiver 3 valores x, y e z e eu quero que o maior valor esteja em z:
+if(x > y) swap(x,y);
+if(y > z) swap(y,z);
+dessa forma garanto que o maior valor está na variável z. obs: a função swap é do c++.
+
+- Numero primo. Para achar se um numero é primo ou não, usar o for loop começando em 2 e indo até a raiz quadrada de do numero
+for(i=2; i<=sqrt(n);i++) if(n%i == 0) "nao é primo"
+
