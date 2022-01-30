@@ -52,3 +52,4 @@ dessa forma garanto que o maior valor está na variável z. obs: a função swap
 - Numero primo. Para achar se um numero é primo ou não, usar o for loop começando em 2 e indo até a raiz quadrada de do numero
 for(i=2; i<=sqrt(n);i++) if(n%i == 0) "nao é primo"
 
+- 3 * 10^7 máximo de operações para passar em até 1 segundo.
